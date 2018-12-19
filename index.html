@@ -1,0 +1,1161 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Boreal Community Media | Your Access to the Arrowhead</title>
+<meta charset='utf-8'>
+<meta content='LocablePublisherNetwork.com' name='generator'>
+<meta content='width=device-width, initial-scale=1' name='viewport'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"cc2c1fbc9a","applicationID":"18721","transactionName":"IQwNRUJXWQhdEBdQWg8GE1BXXUZLSwpXTw==","queueTime":7,"applicationTime":859,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQEPV1FACQsHVlA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(13),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(14),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(16)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){g.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,y="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(y,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===y||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(13),c=t(14),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],13:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],14:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],15:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],16:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(14),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[g[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return d[t]=d[t]||o(n)}function y(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var w={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:y,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(13),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-b.offset}var c=(new Date).getTime(),s=t("handle"),f=t(13),u=t("ee"),d=t(12),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,y=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var w=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},x=v&&y&&y[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:x,userAgent:d};t(9),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),s("mark",["firstbyte",c],null,"api");var E=0,O=t(15)},{}]},{},["loader",2,7]);</script>
+<meta content='122882951100578' property='fb:app_id'>
+<meta property="og:title" content="Boreal Community Media | Your Access to the Arrowhead" /><meta name="description" content="" /><meta property="og:description" content="" /><meta name="keywords" content="&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2,nsw-ep4ib10yylkgt08fnc8x-whdg9cnfz4brkcn2g0o6mkqz8ekgb4ekhyye3o8gkj6ozznkq1c20qp1ks6ii40bj0o3voctt89oyj2o72h11ndt0lignni3rweb6jikt3d&quot;/&gt;" /><meta name="ICMB" content="" /><link rel="canonical" href="https://www.boreal.org/" /><meta property="og:url" content="https://www.boreal.org/" /><link rel="alternate" type="application/atom+xml" title="ATOM" href="https://www.boreal.org/?format=atom" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.boreal.org/?format=rss" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="PSVJZCDvE3WnpC3Z7OypfJZoYcORKJQjKEQltFvIgL1JNXpyym2evgLW1qtX/Uj1IRA8+hKonmFzGUTZvTAlWA==" />
+<link rel="shortcut icon" type="image/x-icon" href="//cdn2.locable.com/uploads/favicon_img/file/14/favicon.ico" />
+<link rel="stylesheet" media="screen" href="//cdn1.locable.com/assets/application-f6f48ea818f5df1c4f4d4ee2a306631d04d45a46e2576fdaead7416121bfa617.css" />
+<link rel="stylesheet" media="print" href="//cdn3.locable.com/assets/print-a8ed28965cfc1e180c5fb2bf9a2246811c389e56a792ba2c42606d164408fef0.css" />
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</script>
+<script type="text/javascript">
+  ga('create', 'UA-7541257-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+  ga('create', 'UA-16494411-5', 'auto', {'name': 'rollup'});
+  ga('rollup.send', 'pageview');
+</script>
+<style>
+  .custom-header, .custom-header a {color:  !important; }.custom-header {background-color:  !important; }.custom-header {text-align: center !important; }#masthead .container {background-image: url(https://cdn3.locable.com/uploads/resource/file/437514/Screen_20Shot_202018-02-01_20at_208.23.10_20PM.png) !important;}body.public, body.dco { background-color: #ffffff;}#main-nav .navbar-nav .nav-link, .classic-nav .navbar-brand .navbar-text, #main-nav .navbar-toggler span {color: #ffffff !important;} #main-nav .navbar-toggler {border-color: #ffffff !important;}#main-nav .navbar-nav .nav-link:hover, .classic-nav .navbar-brand:hover .navbar-text {color:  !important;}#main-nav .navbar-nav .nav-link:hover, .classic-nav .navbar-brand:hover .navbar-text {background-color:  !important;}.public #main-nav .container, .dco #main-nav .container, .admin #main-nav, .admin #main-nav .container {background-color: #000000 !important;}#main-nav .dropdown-item {color:  !important;}#main-nav .dropdown-item:hover {color:  !important;}#main-nav .dropdown-item:hover {background-color:  !important;}#main-nav .dropdown-menu {background-color:  !important;}#secondary-nav .navbar-nav .nav-link, #secondary-nav a {color: #110f94 !important;}#secondary-nav .navbar-nav .nav-link:hover, #secondary-nav a:hover {color:  !important;}#secondary-nav .navbar-nav .nav-link:hover, #seconary-nav a:hover {background-color:  !important;}#secondary-nav nav {background-color: #ffffff !important;}#secondary-nav .navbar-nav .dropdown-menu .nav-link {color:  !important;}#secondary-nav .navbar-nav .dropdown-menu .nav-link:hover {color:  !important;}#secondary-nav .navbar-nav .dropdown-menu .nav-link:hover {background-color:  !important;}#secondary-nav .dropdown-menu {background-color:  !important;}.col-menu li a, .simple-footer li a, #copyright p.text-muted a {color:  !important; }.col-menu li a:hover, .simple-footer li a:hover, #copyright p.text-muted a:hover {color:  !important; }#footer p, #footer h6, #copyright p {color: #050505 !important; }.places #copyright, .places #footer, #copyright .container, #footer .container {background-color:  !important; }
+  .custom-header { background-color: #96C0CF; color: #2D2D2D; text-transform: uppercase;} 
+  .custom-header a {color: #ffffff; font-size: 115%;} 
+  .carousel-caption h5 a {text-transform: uppercase;} 
+  #secondary-nav .navbar-nav a {text-transform: uppercase; font-size: 130%;} 
+  #secondary-nav .navbar-nav li {padding-top: 8px; padding-bottom: 8px; margin-bottom: 25px;} 
+  
+  .fb-comments {display: none !important;}
+  
+  
+  /*Adjusts body if weather widget exists*/
+  .weather-warning, .weather-warning .classic-nav, .weather-warning .compact-nav {margin-top: 42px;}
+  @media (max-width: 600px) {
+  .weather-warning, .weather-warning .classic-nav, .weather-warning .compact-nav {margin-top: 72px;}
+  }
+  
+  /*
+  Pre-existing Styles for Reference
+  #theme-wrapper .navbar .caret {display: none;} 
+  #theme-menu .theme-menu-dropdown {z-index: -10;}
+  #theme-header {padding: 10px 0 0 0;} 
+  #theme-menu div.navbar-default {border: none; box-shadow: none;} 
+  #theme-menu div.navbar-default a {text-transform: uppercase; font-size: 130%;} 
+  #theme-menu div.navbar-default li {padding-top: 8px; padding-bottom: 8px; margin-bottom: 25px;} 
+  #theme-menu .theme-menu-dropdown {border: 2px solid #96C0CF;} 
+  #theme-header a {font-size: 20px;}
+  #theme-calendar-tab-0 .thumbnail {display: none;}
+  #theme-calendar-tab-0 .media-body p {margin-bottom: 5px;}
+  #theme-calendar-tab-0>.list-unstyled>li>p {display: none;}
+  #theme-calendar-tab-0 hr {margin: 8px 0;}
+  #theme-calendar-tab-0 .text-muted:nth-of-type(1)  {float: left;}
+  #theme-calendar-tab-0 .text-muted:nth-of-type(2) {float: right;}
+  
+  .category-feature h2 { background-color: #96C0CF; color: #2D2D2D; text-transform: uppercase;} 
+  .category-feature h2 a {color: #ffffff; font-size: 115%;} 
+  .carousel-responsive-caption h2 a {text-transform: uppercase;} 
+  
+  @media (max-width: 768px) {
+  
+  #theme-menu div.navbar-default .navbar-header {height: 51px!important;}
+  .navbar-header button.navbar-toggle  {margin-top: 10px;}
+  }
+  
+  */
+</style>
+<link href="https://fonts.googleapis.com/css?family=Proxima Nova" rel='stylesheet' type='text/css'>
+<meta name="norton-safeweb-site-verification" content="ep4ib10yylkgt08fnc8x-whdg9cnfz4brkcn2g0o6mkqz8ekgb4ekhyye3o8gkj6ozznkq1c20qp1ks6ii40bj0o3voctt89oyj2o72h11ndt0lignni3rweb6jikt3d" />
+<script src="https://cdnres.willyweather.com/widget/warning/loadView.html?id=97331" type="684b5d7aaab3209eafabb461-application/javascript"></script>
+</head>
+<body class='classic-header public'>
+<a class="sr-only" href="#content">Skip to main content</a>
+<div class='fixed-top' data-toggle='affix'>
+<section id='main-nav'>
+<div class='container theme-shadow bg-white'>
+<nav class='classic-nav navbar navbar-expand-lg navbar-light'>
+<a class="navbar-brand" href="/"><span class='navbar-text fas fa-home' style='position:relative;top:2px'></span>
+</a><button aria-controls='navbarContent' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarContent' data-toggle='collapse' type='button'>
+<span class='fas fa-bars'></span>
+</button>
+<div class='collapse navbar-collapse' id='navbarContent'>
+<ul class='navbar-nav mr-lg-auto' style='white-space: nowrap;'>
+<li class='external-link-1-nav nav-item'><a class="nav-link" href="https://email.boreal.org">Check Email</a></li>
+
+<li class='external-link-2-nav nav-item'><a class="nav-link" href="https://boreal.yclas.com/">Classifieds</a></li>
+
+<li class='nav-item page-126493-nav'><a target="_blank" class="nav-link" href="/pages/about-boreal">About Boreal</a></li>
+
+<div class='dropdown-divider d-inline d-lg-none'></div>
+<div class='d-lg-none'>
+<li class='category-134-nav nav-item theme-menu-toggle' data-toggle='category-134'>
+
+<a class="nav-link" href="/categories/news">News
+<b class='caret'></b>
+</a></li>
+<li class='calendar-nav nav-item theme-menu-toggle' data-toggle='calendar'>
+
+<a class="nav-link" href="/calendar">Calendar
+<b class='caret'></b>
+</a></li>
+<li class='category-1352-nav nav-item theme-menu-toggle' data-toggle='category-1352'>
+
+<a class="nav-link" href="/categories/wtip-radio">WTIP Radio
+<b class='caret'></b>
+</a></li>
+<li class='category-121-nav nav-item theme-menu-toggle' data-toggle='category-121'>
+
+<a class="nav-link" href="/categories/community">Community
+<b class='caret'></b>
+</a></li>
+<li class='category-787-nav nav-item theme-menu-toggle' data-toggle='category-787'>
+
+<a class="nav-link" href="/categories/arts-culture">Arts+Culture
+<b class='caret'></b>
+</a></li>
+<li class='category-802-nav nav-item theme-menu-toggle' data-toggle='category-802'>
+
+<a class="nav-link" href="/categories/outdoors">Outdoors
+<b class='caret'></b>
+</a></li>
+<li class='category-636-nav nav-item theme-menu-toggle' data-toggle='category-636'>
+
+<a class="nav-link" href="/categories/local-life">Local Life
+<b class='caret'></b>
+</a></li>
+<li class='directory-nav nav-item theme-menu-toggle' data-toggle='directory'>
+
+<a class="nav-link" href="/businesses">Directory
+<b class='caret'></b>
+</a></li>
+<div class='dropdown-divider d-inline d-lg-none'></div>
+<div class='dropdown-divider'></div>
+</div>
+<div class='d-lg-none'>
+
+<li class='nav-item'><a class="nav-link px--lg-2 py-lg-0" href="/events/new">Submit an Event</a></li>
+<li class='nav-item'><a class="nav-link px-lg-2 py-lg-0" href="/places">List Your Business</a></li>
+<li class='nav-item'>
+<a class="nav-link px-lg-2 py-lg-0" href="/users/sign_in">Login/Join
+</a></li>
+<div class='dropdown-divider'></div>
+</div>
+</ul>
+<ul class='navbar-nav ml-lg-auto'>
+<ul class='list-inline social-links' style='white-space: nowrap;'>
+</ul>
+<form class="form-inline" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<div class='input-group'>
+<label class="sr-only" for="q">Search</label>
+<input type="text" name="q" id="q" placeholder="Search Site" class="form-control" />
+<span class='input-group-btn'>
+<button class='btn btn-secondary btn-search'>
+<span class='sr-only'>Search</span>
+<span class='fas fa-search'></span>
+</button>
+</span>
+</div>
+</form>
+</ul>
+</div>
+</nav>
+</div>
+</section>
+</div>
+<section id='alerts'>
+<div class='container theme-shadow bg-white'>
+<div class='d-flex justify-content-center'>
+</div>
+</div>
+</section>
+<header>
+<section id='masthead'>
+<div class='container theme-shadow bg-white'>
+<div class='row'>
+<div class='col-12'>
+<h1 class='p-3'><a href="/"><img alt="Boreal Community Media" style="max-width: 100%;" src="//cdn1.locable.com/uploads/logo_image/file/500/boreal-logo-wide-white.png" /></a></h1>
+</div>
+</div>
+</div>
+</section>
+<div class='d-none d-lg-inline'>
+<section id='secondary-nav'>
+<div class='container theme-shadow bg-white'>
+<div class='row py-1'>
+<div class='col-sm-12'>
+<nav class='navbar navbar-expand-lg navbar-light'>
+
+<ul class='navbar-nav mr-auto flex-wrap' style='white-space: nowrap;'>
+
+
+
+
+
+
+<li class='category-134-nav nav-item theme-menu-toggle' data-toggle='category-134'>
+
+<a class="nav-link" href="/categories/news">News
+<b class='caret'></b>
+</a></li>
+<li class='calendar-nav nav-item theme-menu-toggle' data-toggle='calendar'>
+
+<a class="nav-link" href="/calendar">Calendar
+<b class='caret'></b>
+</a></li>
+<li class='category-1352-nav nav-item theme-menu-toggle' data-toggle='category-1352'>
+
+<a class="nav-link" href="/categories/wtip-radio">WTIP Radio
+<b class='caret'></b>
+</a></li>
+<li class='category-121-nav nav-item theme-menu-toggle' data-toggle='category-121'>
+
+<a class="nav-link" href="/categories/community">Community
+<b class='caret'></b>
+</a></li>
+<li class='category-787-nav nav-item theme-menu-toggle' data-toggle='category-787'>
+
+<a class="nav-link" href="/categories/arts-culture">Arts+Culture
+<b class='caret'></b>
+</a></li>
+<li class='category-802-nav nav-item theme-menu-toggle' data-toggle='category-802'>
+
+<a class="nav-link" href="/categories/outdoors">Outdoors
+<b class='caret'></b>
+</a></li>
+<li class='category-636-nav nav-item theme-menu-toggle' data-toggle='category-636'>
+
+<a class="nav-link" href="/categories/local-life">Local Life
+<b class='caret'></b>
+</a></li>
+<li class='directory-nav nav-item theme-menu-toggle' data-toggle='directory'>
+
+<a class="nav-link" href="/businesses">Directory
+<b class='caret'></b>
+</a></li>
+<div class='dropdown-divider d-inline d-lg-none'></div>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+</div>
+<section id='pushdown'>
+<div class='container theme-shadow bg-white'>
+<div class='d-flex justify-content-center'>
+<div class='py-3'><broadstreet-zone zone-id='pushdown' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='pushdown' keywords='home, boreal-community-media' , count='1'></broadstreet-zone></div>
+</div>
+</div>
+</section>
+</header>
+<div id='content'>
+<section id='homepage-embed-component'>
+<div class='bg-white container theme-shadow'>
+<div class='row py-3'>
+<div class='col-sm-12 py-3'>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.floating-box {
+    display: inline-block;
+    width: 157px;
+    height: 100px;
+    margin: 0px;
+text-align: center; font-family: proxima-nova, sans-serif; font-size: small}
+
+.after-box {border: 3px white; 
+
+body {}
+
+</style>
+</head>
+<body>
+<div class="row">
+<div class="col-12 text-center">
+<div class="floating-box "><a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=kmntofte2" title="Tofte Forecast" target="_blank"><img src="https://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_macwhite&pwscode=KMNTOFTE2&language=EN" width="160" alt="image not found today" /><BR>Tofte</a></div>
+<div class="floating-box">
+<a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=kmngrand5" title="Upper Gunflint Trail Forecast" target="_blank"><img src="https://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_
+
+macwhite&pwscode=KMNGRAND5&language=EN" width="160" alt="image not found today" /><BR>Upper Gunflint Trail</a></div>
+<div class="floating-box"><a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=kckc" title="Grand Marais Airport Forecast" target="_blank"><img src="https://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_
+
+macwhite&airportcode=KCKC&language=EN" width="160" alt="image not found today" /><BR>Grand Marais Airport</a></div>
+<div class="floating-box"><a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=kmngrand12" title="Grand Marais Downtown Forecast" target="_blank"><img src="https://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_
+
+macwhite&pwscode=KMNGRAND12&language=EN" width="160" alt="image not found today" /><BR>Grand Marais Downtown</a></div>
+<div class="floating-box"><a href="https://www.wunderground.com/cgi-bin/findweather/getForecast?query=KMNGRAND32" title="Grand Portage Forecast" target="_blank"><img src="https://weathersticker.wunderground.com/weathersticker/cgi-bin/banner/ban/wxBanner?bannertype=wu_
+
+macwhite&pwscode=KMNGRAND32&language=EN" width="160" alt="image not found today" /><BR>Grand Portage</a></div>
+</div>
+</div>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/2448a7bd/cloudflare-static/rocket-loader.min.js" data-cf-nonce="684b5d7aaab3209eafabb461-" defer=""></script></body>
+</html>
+</div>
+</div>
+</div>
+</section>
+<div class='container theme-shadow bg-white'>
+<div class='row'>
+<div class='col-12 col-lg-8'>
+<section id='carousel-component'>
+<div class='container'>
+<div class='row py-3'>
+<div class='col-12'>
+<div class='carousel slide' data-interval='7500' data-ride='carousel' id='carousel-option-1'>
+<div class='carousel-inner'>
+<div class='active carousel-item'>
+<div class='undecorate'>
+<a href="/2018/11/19/184220/4-tips-for-a-feud-free-family-gathering"><img alt="" class="img-fluid" src="//cdn0.locable.com/uploads/resource/file/497316/fill/1200x900/Attachment-1-2.jpeg?timestamp=1542646864" />
+<div class='carousel-caption'>
+<h5>4 tips for a feud-free family gathering</h5>
+<p>By Nancy Yang of Minnesota Public Radio News - November 19, 2018</p>
+</div>
+</a></div>
+</div>
+<div class='carousel-item'>
+<div class='undecorate'>
+<a href="/2018/11/19/184207/eagle-mountain-mn-taking-a-10-year-old-to-the-frozen-tundra"><img alt="" class="img-fluid" src="//cdn0.locable.com/uploads/resource/file/497288/fill/1200x900/5bef0b97aab34.image.jpg?timestamp=1542632194" />
+<div class='carousel-caption'>
+<h5>Eagle Mountain, MN: Taking a 10 year old to the frozen tundra</h5>
+<p>By Adam Fox of richlandsource.com - November 18, 2018</p>
+</div>
+</a></div>
+</div>
+<div class='carousel-item'>
+<div class='undecorate'>
+<a href="/2018/10/08/181674/cold-tonight-and-tomorrow-warming-up-on-thanksgiving-"><img alt="" class="img-fluid" src="//cdn2.locable.com/uploads/resource/file/497815/fill/1200x900/Tab2FileL.png?timestamp=1542746980" />
+<div class='carousel-caption'>
+<h5>Cold tonight and tomorrow, warming up on Thanksgiving.</h5>
+<p>From the National Weather Service - Duluth MN - November 19, 2018</p>
+</div>
+</a></div>
+</div>
+</div>
+<a class='carousel-control-prev' data-slide='prev' href='#carousel-option-1' role='button'>
+<span aria-hidden='true' class='carousel-control-prev-icon'></span>
+<span class='sr-only'>Previous</span>
+</a>
+<a class='carousel-control-next' data-slide='next' href='#carousel-option-1' role='button'>
+<span aria-hidden='true' class='carousel-control-next-icon'></span>
+<span class='sr-only'>Next</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id='featured-articles-component'>
+<div class='container'>
+<div class='load-more'>
+<div class='row py-3'>
+<div class='col-12'>
+<h4 class='custom-header py-2 px-3'>
+<span>Featured Articles</span>
+</h4>
+</div>
+</div>
+<div class='undecorate py-3'>
+<a href="/2018/11/20/184331/video-report-series-of-errors-in-kayak-accident-that-killed-dad-3-kids-on-lake-superior"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn0.locable.com/uploads/resource/file/497774/fill/600x400/Screen_20Shot_202018-11-20_20at_2012.34.33_20PM.png?timestamp=1542738889" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>Video Report: Series of errors in kayak accident that killed dad, 3 kids on Lake Superior</h5>
+A Wisconsin DNR investigative report reveals a series of errors by the family who tipped their kayak in Lake Superior near Madeline Island in late August, leading to the deaths of the three children and their father. Their mother survived. From KMSP Fox 9 TV - November 19, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='undecorate py-3'>
+<a href="/2018/11/19/184244/oh-ole-night-parade-tree-lighting-and-fireworks-coming-friday-night"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn0.locable.com/uploads/resource/file/497497/fill/600x400/NS-Holiday-2015-parade-1-Medium-1.jpg?timestamp=1542659587" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>Oh Ole Night Parade, Tree Lighting and Fireworks coming Friday night</h5>
+The event runs from 5:30-7pm in Harbor Park in Grand Marais. From visitcookcounty.com - November 19, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='d-flex justify-content-center pb-3'>
+<broadstreet-zone zone-id='inline' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='sidebar' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+<div class='undecorate py-3'>
+<a href="/2018/11/19/184208/light-up-lutsen-come-get-some-"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn0.locable.com/uploads/resource/file/497290/fill/600x400/IMG_1784.jpg?timestamp=1542636979" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>Light up Lutsen - Come Get Some!</h5>
+The event will be held across the Lutsen community this Saturday, November 24 from 2-6pm. Media Release from the Downtown Lutsen Business Group - November 19, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='undecorate py-3'>
+<a href="/2018/10/23/182469/hovland-arts-festival-holiday-sale-coming-saturday"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn3.locable.com/uploads/resource/file/491707/fill/600x400/Nov2018.jpg?timestamp=1540307656" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>Hovland Arts Festival Holiday Sale coming Saturday</h5>
+The Holiday Sale will be held Saturday from 10am to 4pm at the Hovland Town Hall. From Lake Superior News - October 22, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='d-flex justify-content-center pb-3'>
+<broadstreet-zone zone-id='inline_2' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='sidebar_2' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+<div class='undecorate py-3'>
+<a href="/2018/10/27/182737/north-shore-winery-to-host-christmas-market-on-friday"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn0.locable.com/uploads/resource/file/492777/fill/600x400/17p1.jpg?timestamp=1540640851" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>North Shore Winery to host Christmas Market on Friday</h5>
+The Market will be held from noon to 6pm on Friday at the winery in Lutsen. From The Cook County News Herald - October 26, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='undecorate py-3'>
+<a href="/2018/11/16/184076/on-thin-ice-teaching-kids-the-dangers-of-ice"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn1.locable.com/uploads/resource/file/496875/fill/600x400/5a34077d17dd2.image.jpg?timestamp=1542377333" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>On thin ice: Teaching kids the dangers of ice</h5>
+From the Minnesota Department of Natural Resources
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+<div class='d-flex justify-content-center pb-3'>
+<broadstreet-zone zone-id='inline_3' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='sidebar_3' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+<div class='undecorate py-3'>
+<a href="/2018/11/15/184033/free-community-dinner-at-first-congregational-united-church-of-christ-on-thanksgiving"><div class='row'>
+<div class='col-12 col-lg-4'>
+<img alt="" class="mr-lg-3 img-fluid" src="//cdn0.locable.com/uploads/resource/file/496679/fill/600x400/1080-thanksgiving.png?timestamp=1542287200" />
+</div>
+<div class='col-12 col-lg-8'>
+<h5 class='mt-3 mt-lg-0'>Free Community Dinner at First Congregational United Church of Christ on Thanksgiving</h5>
+From Boreal Community Media - November 15, 2018
+<b>Read More &raquo;</b>
+</div>
+</div>
+</a></div>
+</div>
+<div class='d-flex justify-content-center pb-3'>
+<a rel="next" id="load-more-articles" class="btn btn-light" data-remote="true" href="/?page=2">Load More Articles</a>
+</div>
+</div>
+</section>
+<section id='featured-categories-component'>
+<div class='container'>
+<div class='row py-3'>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/boreal-emergency-preparedness">Boreal Emergency Preparedness</a></h6>
+</div>
+<a href="/2018/11/20/184294/thanksgiving-road-trip-tips"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn1.locable.com/uploads/resource/file/497658/fill/600x400/thanksgiving-road-trips-us-guide-banner-dp-min.jpg?timestamp=1542717763" alt="Thanksgiving road trips us guide banner dp min" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Thanksgiving Road Trip Tips</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/19/184209/fema-offers-tips-and-resources-for-safe-travel-over-thanksgiving-weekend">FEMA offers tips and resources for safe travel over Thanksgiving Weekend</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/17/184130/video-safety-tips-for-early-season-ice-fishing">Video: Safety tips for early-season ice fishing</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/16/184075/skiing-safety-tips-for-kids-and-teens">Skiing safety tips for kids and teens</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/outdoors">Outdoors</a></h6>
+</div>
+<a href="/2018/11/20/184317/angler-sets-new-benchmark-for-northern-pike-state-record"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn2.locable.com/uploads/resource/file/497746/fill/600x400/615939289_750x422.jpg?timestamp=1542735622" alt="615939289 750x422" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Angler sets new benchmark for northern pike state record</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/20/184291/deer-hunter-dies-in-aitkin-county">Deer hunter dies in Aitkin County</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/19/184235/weekly-mn-dnr-conservation-officer-reports">Weekly MN DNR Conservation Officer Reports</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/18/184133/new-testing-finds-that-cwd-appears-to-be-spreading">New testing finds that CWD appears to be spreading</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row py-3'>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/news">News</a></h6>
+</div>
+<a href="/2018/11/20/184293/downtown-two-harbors-continues-to-blossom-with-addition-of-mcquade-s-pub"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn1.locable.com/uploads/resource/file/497657/fill/600x400/5bf2fc05c9498.image.jpg?timestamp=1542716711" alt="5bf2fc05c9498.image" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Downtown Two Harbors continues to blossom with addition of McQuade’s Pub</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/19/184238/why-some-minnesota-environmentalists-aren-t-more-excited-about-the-dfl-s-big-election-wins">Why some Minnesota environmentalists aren’t more excited about the DFL’s big election wins</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/19/184214/cook-county-sheriffs-weekly-report">Cook County Sheriff&#39;s Weekly Report</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/18/184137/authorities-respond-to-one-vehicle-rollover-near-silver-cliff-tunnel-saturday">Authorities Respond to One Vehicle Rollover near Silver Cliff Tunnel Saturday</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/community">Community</a></h6>
+</div>
+<a href="/2018/11/19/184217/be-safe-be-seen-pedestrian-safety-in-the-dark-months-"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn2.locable.com/uploads/resource/file/497310/fill/600x400/Screen_20Shot_202018-11-19_20at_2010.24.50_20AM.png?timestamp=1542644754" alt="Screen 20shot 202018 11 19 20at 2010.24.50 20am" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Be Safe. Be Seen. Pedestrian Safety in the Dark Months.</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/16/184105/2018-annual-audubon-christmas-bird-count-coming-saturday-december-15">2018 Annual Audubon Christmas Bird Count coming Saturday, December 15</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/03/183411/gunflint-mercantile-owner-purchases-elfvins-bakery">Gunflint Mercantile owner purchases Elfvin&#39;s Bakery</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/01/183247/topic-of-the-month-active-living-benefits-every-body">Topic of the Month: Active Living Benefits Every Body</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row py-3'>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/arts-culture">Arts+Culture</a></h6>
+</div>
+<a href="/2018/11/15/184054/annual-holiday-craft-sale-and-open-house"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn2.locable.com/uploads/resource/file/496801/fill/600x400/HolidayCraftSale.jpg?timestamp=1542313787" alt="Holidaycraftsale" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Annual holiday craft sale and open house</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/10/183808/when-she-paints-a-river-the-water-colors-her-work">When she paints a river, the water colors her work</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/09/183728/book-review-gentle-hikes-on-the-north-shore">Book Review: Gentle Hikes on the North Shore</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/07/183622/grand-marais-art-colony-moves-into-a-co-directorship">Grand Marais Art Colony Moves into a Co-Directorship</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/wtip-radio">WTIP Radio</a></h6>
+</div>
+<a href="/2018/11/15/184050/ginny-storlie-remains-on-county-board-following-recount"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn3.locable.com/uploads/resource/file/496794/fill/600x400/wtip.PNG?timestamp=1542310528" alt="Wtip" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Ginny Storlie remains on county board following recount</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/09/183747/full-house-for-mndot-highway-61-construction-update">Full house for MnDOT Highway 61 construction update</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/02/183338/forest-service-shares-plans-for-logging-prescribed-burns-near-the-gunflint-trail">Forest Service shares plans for logging, prescribed burns near the Gunflint Trail</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/01/183142/dnr-addresses-wolf-concerns-in-advance-of-firearm-deer-hunting-season">DNR addresses wolf concerns in advance of firearm deer hunting season</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class='row py-3'>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/local-life">Local Life</a></h6>
+</div>
+<a href="/2018/11/20/184292/north-shore-author-muses-about-climate-change"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn3.locable.com/uploads/resource/file/497655/fill/600x400/111618.N.NC_.KatyaBook.B.png?timestamp=1542715790" alt="111618.n.nc .katyabook.b" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>North Shore author muses about climate change</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/11/183815/boreal-welcomes-the-community-at-its-open-house-">Boreal welcomes the community at its Open House.</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/10/183807/lutsen-mountains-to-open-this-weekend">Lutsen Mountains to open this weekend</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/07/183598/four-ponsse-machines-do-the-harvesting-and-heavy-lifting-at-stan-nelson-jr-logging">Four Ponsse Machines Do the Harvesting and Heavy Lifting at Stan Nelson Jr. Logging </a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class='col-12 col-md-6 py-3 py-md-0'>
+<div class='undecorate'>
+<h6 class='custom-header py-2 px-3 text-uppercase'><a href="/categories/boreal-corpos">Student Voices</a></h6>
+</div>
+<a href="/2018/11/16/184072/ice-storm-robotics-team-gets-in-gear"><div class='card border-0 card-inverse'>
+<div class='gradient-overlay'>
+<img class="img-fluid card-img rounded-0" src="//cdn3.locable.com/uploads/resource/file/496834/fill/600x400/21p1.jpg?timestamp=1542369572" alt="21p1" />
+</div>
+<div class='card-img-overlay d-flex flex-column justify-content-end'>
+<h5 class='card-title text-capitalize text-white' style='text-shadow: 2px 2px 4px #000000;'>Ice Storm robotics team gets in gear</h5>
+</div>
+</div>
+</a>
+<div class='undecorate'>
+<ul class='list-group list-group-flush'>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/14/183997/cook-county-schools-isd-166-11-15-18-school-board-agenda">Cook County Schools ISD 166 11.15.18 School Board Agenda</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/08/183710/common-ground-summit-2019-survey">Common Ground Summit 2019 Survey</a></p>
+</li>
+<li class='list-group-item p-2'>
+<p class='px-0 m-0 text-capitalize'><a class="" href="/2018/11/03/183416/state-cross-country-results">State Cross Country Results </a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id='local-spotlight-component'>
+<div class='container'>
+<div class='row py-1'>
+<div class='col-12'>
+<h4 class='custom-header py-2 px-3'>Local Spotlight #SupportLocal</h4>
+</div>
+</div>
+<div class='row py-3'>
+<div class='col-12'>
+<div class='row py-0 py-sm-3'>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-terra-bella-floral-gifts"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn1.locable.com/uploads/resource/file/366609/fit/300x125/Terra_20Bella_20Floral_20new_20logo_20_002_.jpg?timestamp=1495637032" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>Terra Bella Floral &amp; Gifts</h5>
+<p class='small text-muted'>The Earth Smiles in Flowers!</p>
+</div>
+</div>
+</a></div>
+</div>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-grandma-rays-3"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn1.locable.com/uploads/resource/file/461213/fit/300x125/grandma_20ray_s.jpg?timestamp=1527093123" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>Grandma Ray's</h5>
+<p class='small text-muted'></p>
+</div>
+</div>
+</a></div>
+</div>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-wildfire-sprinkler-inc-dba-wildfire-protection-systems"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn0.locable.com/uploads/resource/file/461012/fit/300x125/975177_68480L_Gif.gif?timestamp=1527012987" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>Wildfire Sprinkler, Inc. dba Wildfire Protection Systems</h5>
+</div>
+</div>
+</a></div>
+</div>
+</div>
+<div class='row py-0 py-sm-3'>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-north-shore-waste"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn3.locable.com/uploads/resource/file/444641/fit/300x125/nsw.png?timestamp=1520358401" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>North Shore Waste</h5>
+<p class='small text-muted'></p>
+</div>
+</div>
+</a></div>
+</div>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-blue-water-cafe"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn3.locable.com/uploads/resource/file/447724/fit/300x125/bluewatercafe_logo.png?timestamp=1521737241" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>Blue Water Cafe - Grand Marais, MN</h5>
+<p class='small text-muted'></p>
+</div>
+</div>
+</a></div>
+</div>
+<div class='col-12 col-sm-4 d-flex align-items-stretch w-100 py-3 py-sm-0'>
+<div class='undecorate w-100'>
+<a class="" href="/businesses/mn-grand-marais-sawtooth-mountain-clinic-2"><div class='card rounded-0 d-flex align-items-stretch h-100 border-0'>
+<img class="index-images-1 card-img-top img-fluid cover" alt="" src="//cdn0.locable.com/uploads/resource/file/456737/fit/300x125/clinic.png?timestamp=1525199176" />
+<div class='card-body p-1 mt-3'>
+<p class='small card-text py-1 m-0'>
+</p>
+<h5 class='card-title p-0 mb-1'>Sawtooth Mountain Clinic</h5>
+</div>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class='d-flex justify-content-center pb-3'>
+<a class="btn btn-light" href="/businesses">View All Businesses</a>
+</div>
+</div>
+</section>
+</div>
+<div class='col-12 col-lg-4'>
+<div class='div' style='width: 300px; margin: auto;'>
+<div id='calendar-widget'>
+<div class='undecorate'>
+<div class='my-3'>
+<h5 class='px-3 py-2 custom-header'>Upcoming Events Near You</h5>
+<a class="undecorate" href="/events/125171/terra-bella-floral-hours"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>Terra Bella Floral hours</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+12:00am
+&#183;
+No venue was assigned to this event.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/150379/open-daily-from-3-9-pm-happy-hour-7-days-week"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>Open Daily From 3-9 PM | Happy hour 7 days/week</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+12:00am
+&#183;
+Skyport Lodge &amp; Raven Rock Grill - Grand Marais, MN
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/153965/breakfast-and-dinner-available-at-naniboujou-"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>Breakfast and Dinner Available at Naniboujou!</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+12:00am
+&#183;
+Naniboujou Lodge &amp; Restaurant
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/147072/ymca-water-fitness-classes"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>YMCA Water Fitness Classes</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+9:00am
+&#183;
+Cook County Community YMCA
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/112047/anxiety-depression-support-group-for-women"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>Anxiety/Depression Support Group for Women</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+10:00am
+&#183;
+Sherri Moe, MS Psychotherapist
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/147073/ymca-drums-alive-"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>YMCA Drums Alive!</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+10:00am
+&#183;
+Cook County Community YMCA
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a><a class="undecorate" href="/events/147086/ymca-yoga-classes"><div class='card border-0 m-1'>
+<div class='card-body p-1'>
+<div class='card-text p-1'>
+<div class='media'>
+<div class='span fa-stack fa-lg'>
+<i class='far fa-calendar fa-stack-2x'></i>
+<strong class='fa-stack-1x calendar-text'>
+21
+</strong>
+</div>
+<div class='media-body ml-2'>
+<h6>YMCA Yoga Classes</h6>
+<div class='text-muted small' style='margin-bottom: 2px'>
+11:00am
+&#183;
+Cook County Community YMCA
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+<div class='d-flex justify-content-center pb-3'>
+<a class="btn btn-light" href="/calendar"><div class='fas fa-calendar-alt'></div>
+View All
+</a><a class="btn btn-light rounded-0" href="/events/new"><div class='fas fa-plus-circle'></div>
+Add Your Event
+</a></div>
+</div>
+</div>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<div class='images-sidebar my-3 clearfix'>
+<script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="23948/"></script> </div>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<broadstreet-zone zone-id='sidebar' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='inline' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<h5 class='custom-header py-2 px-3'><a href="https://www.marinetraffic.com/en/ais/home/centerx:-90/centery:47.5/zoom:9">Boreal Ship Spotter - larger view here</a></h5>
+<script type="text/javascript">
+width='300'; // the width of the embedded map in pixels or percentage
+height='350'; // the height of the embedded map in pixels or percentage
+border='0'; // the width of the border around the map (zero means no border)
+shownames='false'; // to display ship names on the map (true or false) 
+latitude='47.00'; // the latitude of the center of the map, in decimal degrees
+longitude='-90.5'; // the longitude of the center of the map, in decimal degrees
+zoom='7'; // the zoom level of the map (values between 2 and 17)
+maptype='0'; // use 0 for Normal Map, 1 for Satellite, 2 for OpenStreetMap
+trackvessel='0'; // MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
+fleet=''; // the registered email address of a user-defined fleet (user's default fleet is used)
+</script>
+<script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<h5 class='custom-header py-2 px-3'><a href="https://services.swpc.noaa.gov/images/animations/ovation-north/latest.jpg">Aurora Borealis Forecast</a></h5>
+<a href="https://services.swpc.noaa.gov/images/animations/ovation-north/latest.jpg"><img class="border" title="Aurora Borealis Forecast" alt="" src="https://services.swpc.noaa.gov/images/animations/ovation-north/latest.jpg" width="300" height="300" /></a>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<broadstreet-zone zone-id='sidebar_2' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='inline_2' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<div class="fb-page" data-href="https://www.facebook.com/BorealAccess" data-tabs="timeline" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/BorealAccess"><a href="https://www.facebook.com/BorealAccess">Boreal Community Media</a></blockquote></div></div>
+</div>
+<div class='images-sidebar my-3 clearfix'>
+<broadstreet-zone zone-id='sidebar_3' keywords='home, boreal-community-media'></broadstreet-zone><broadstreet-zone alt-zone-id='inline_3' keywords='home, boreal-community-media' , count='1'></broadstreet-zone>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<section id='community-sponsor-footer'>
+<div class='container theme-shadow bg-white'>
+<div class='row py-3'>
+<div class='col-sm-12'>
+</div>
+</div>
+</div>
+</section>
+<section id='footer-embed'>
+<div class='container theme-shadow bg-white'>
+<div class='row py-3'>
+<div class='col-sm-12'>
+<p style="text-align: center; font-size: .8em;">Weather Alerts Provided by <a href="https://www.willyweather.com
+">Willy Weather</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id='footer'>
+<div class='container theme-shadow bg-white'>
+<div class='row py-3'>
+<div class='col-12'>
+<nav class='navbar navbar-expand-lg'>
+<ul class='navbar-nav mr-auto simple-footer flex-wrap' style='white-space: nowrap;'>
+<li class='category-134-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-134'>
+
+<a class="nav-link" href="/categories/news">News
+<b class='caret'></b>
+</a></li>
+<li class='calendar-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='calendar'>
+
+<a class="nav-link" href="/calendar">Calendar
+<b class='caret'></b>
+</a></li>
+<li class='category-1352-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-1352'>
+
+<a class="nav-link" href="/categories/wtip-radio">WTIP Radio
+<b class='caret'></b>
+</a></li>
+<li class='category-121-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-121'>
+
+<a class="nav-link" href="/categories/community">Community
+<b class='caret'></b>
+</a></li>
+<li class='category-787-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-787'>
+
+<a class="nav-link" href="/categories/arts-culture">Arts+Culture
+<b class='caret'></b>
+</a></li>
+<li class='category-802-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-802'>
+
+<a class="nav-link" href="/categories/outdoors">Outdoors
+<b class='caret'></b>
+</a></li>
+<li class='category-636-nav d-lg-inline d-none nav-item theme-menu-toggle' data-toggle='category-636'>
+
+<a class="nav-link" href="/categories/local-life">Local Life
+<b class='caret'></b>
+</a></li>
+<li class='d-lg-inline d-none directory-nav nav-item theme-menu-toggle' data-toggle='directory'>
+
+<a class="nav-link" href="/businesses">Directory
+<b class='caret'></b>
+</a></li>
+<div class='dropdown-divider d-inline d-lg-none'></div>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+<section id='copyright'>
+<div class='container theme-shadow'>
+<div class='row pt-3' style='padding-bottom: 50px;'>
+<div class='col-12'>
+<p class='text-muted small p-0 m-0'>
+<span class='far fa-copyright'></span>
+2018 | Powered by <a target="_blank" class="text-muted" href="//www.locable.com">Locable</a>
+|
+<a class="text-muted" href="//national.locable.com/pages/terms-of-use">Terms of Service</a>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section class='fixed-bottom' id='admin-bar'>
+<nav>
+<div class='d-none d-lg-flex'>
+<div class='container'>
+<ul class='nav justify-content-center px-3 mx-auto'>
+
+<li class='nav-item'><a class="nav-link px--lg-2 py-lg-0" href="/events/new">Submit an Event</a></li>
+<li class='nav-item'><a class="nav-link px-lg-2 py-lg-0" href="/places">List Your Business</a></li>
+<li class='nav-item'>
+<a class="nav-link px-lg-2 py-lg-0" href="/users/sign_in">Login/Join
+</a></li>
+</ul>
+</div>
+</div>
+</nav>
+</section>
+</footer>
+<div class='modal fade' id='welcome-modal' role='dialog' tabindex='-1'>
+<div class='modal-dialog modal-lg' role='document'>
+<div class='modal-content'></div>
+</div>
+</div>
+<script src="//cdn2.locable.com/assets/application-0426aaf9e8b7d439f71ca709cf261ccaa4e29a21e4dd326e6c6d34fc2c7ea225.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZcD3GOGGeJpgRadg2myb_T4ipKiW_mDs" type="text/javascript"></script>
+<div id='fb-root'></div>
+<script type="text/javascript">
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=122882951100578";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script type="text/javascript">
+  window.s3DirectPostUrl = "https://locable-processing.s3.amazonaws.com/";
+  window.s3DirectPostFields = {"AWSAccessKeyId":"AKIAJ6MRUF66HJSZBEVA","key":"uploads/f45199c2-1446-42e1-9167-34df053fafcd/${filename}","policy":"eyJleHBpcmF0aW9uIjoiMjAxOC0xMS0yMVQxMjo1MDo0M1oiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJsb2NhYmxlLXByb2Nlc3NpbmcifSxbInN0YXJ0cy13aXRoIiwiJGtleSIsInVwbG9hZHMvZjQ1MTk5YzItMTQ0Ni00MmUxLTkxNjctMzRkZjA1M2ZhZmNkLyJdLHsic3VjY2Vzc19hY3Rpb25fc3RhdHVzIjoiMjAxIn0seyJhY2wiOiJwdWJsaWMtcmVhZCJ9XX0=","signature":"S9bEyz+XIhgWwywsvzqwAvWiY/M=","success_action_status":"201","acl":"public-read"};
+</script>
+<script src="https://static.locablepublishernetwork.com/init-2.min.js" async="async" type="text/javascript"></script>
+<script type="text/javascript">
+  document.addEventListener('broadstreetLoaded', function () {
+    broadstreet.watch( {
+      "autoAttach": {},
+      "autoAttachAndWatch": {},
+      "keywords": ["home", "boreal-community-media"],
+      "networkId": "4044",
+      "selector": 'broadstreet-zone',
+      "softKeywords": true,
+      "uriKeywords": false,
+      "useZoneAliases": true,
+      "useAltZone": 768,
+      "domain": "sponsors.locablepublishernetwork.com"
+    });
+  });
+</script>
+
+<script type="text/javascript">
+$(window).on ("load", function(e) {
+ var ww = document.getElementById("ww-widget-warning");
+    if(ww){
+       $("body").addClass("weather-warning");
+    }
+});
+
+</script>
+<script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52a6071c0ad9d295" async="async" type="text/javascript"></script>
+<script src='https://code.jquery.com/jquery-migrate-3.0.1.js' type="text/javascript"></script>
+</body>
+</html>
